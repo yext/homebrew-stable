@@ -52,7 +52,7 @@ class Python34 < Formula
   # setuptools remembers the build flags python is built with and uses them to
   # build packages later. Xcode-only systems need different flags.
   pour_bottle? do
-    reason <<-EOS.undent
+    reason <<~EOS
     The bottle needs the Apple Command Line Tools to be installed.
       You can install them, if desired, with:
         xcode-select --install
